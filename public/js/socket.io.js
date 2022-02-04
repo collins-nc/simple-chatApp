@@ -1,4 +1,4 @@
-const socket = io.connect("http://localhost:3000");
+const socket = io.connect("https://salty-chamber-87455.herokuapp.com/");
 
 const msg = document.getElementById("msg");
 const btn = document.getElementById("btn");
