@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="logo">
+        <box-icon class="logo--icon"name='scatter-chart' animation='tada' ></box-icon>
+        <h4 class="logo__title">Voicelo</h4>
+    </header>
+    <main class="container">
+        <div class="container__window" id="chat">
+
+        </div>
+        <div class="container__inputs">
+            <div class="container__text">
+                <input type="text" id="msg" class="container__text-input">
+            </div>
+            <button id="btn" class="container__btn" >send</button>
+        </div>
+    </main>
+    <script src="./js/socket.io.js"></script>
+</body>
+</html>

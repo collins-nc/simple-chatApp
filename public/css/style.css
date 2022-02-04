@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(78, 151, 245);
+  background: linear-gradient(
+    142deg,
+    rgba(78, 151, 245, 0.9724089464887518) 2%,
+    rgba(129, 170, 219, 0.7455181901862307) 36%,
+    rgba(14, 39, 97, 0.7007002630153624) 57%,
+    rgba(92, 54, 90, 1) 83%
+  );
+}
+.logo--icon {
+  width: 50px;
+  height: 50px;
+}
+.logo {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+}
+.logo__title {
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 675px;
+  height: 450px;
+  border: 2px solid white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5.7px -21px rgba(0, 0, 0, 0.093),
+    0px 0px 14.3px -21px rgba(0, 0, 0, 0.133),
+    0px 0px 29.2px -21px rgba(0, 0, 0, 0.167),
+    0px 0px 60.2px -21px rgba(0, 0, 0, 0.207),
+    0px 0px 165px -21px rgba(0, 0, 0, 0.3);
+}
+.container__window {
+height: 85%;
+width: 430px;
+overflow-y: scroll;
+scrollbar-color: transparent transparent;
+scrollbar-width: thin;
+border-radius: 10px;
+}
+
+.container__msg {
+  margin: 10px 15px;
+  max-width: 250px;
+  word-wrap: break-word;
+  height: fit-content;
+  padding: 5px;
+
+  border: 2px solid #dadb81;
+  border-radius: 10px;
+}
+#me {
+  background: #7990b7;
+}
+.me {
+  display: flex;
+  justify-content: flex-end;
+}
+#other {
+  color: black;
+  background: #a0bfe4;
+}
+.other {
+  display: flex;
+  justify-content: flex-start;
+}
+#container__msg-chat {
+  margin-left: 15px;
+}
+.container__inputs {
+  display: flex;
+}
+.container__text {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 30px;
+  border-radius: 12px;
+  border: 2px solid #dadb81;
+}
+.container__text-input {
+  width: 300px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.container__btn {
+  color: black;
+  width: 70px;
+  height: 30px;
+  border-radius: 12px;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+.container__btn:hover {
+  border: 2px solid white;
+  background: #576991;
+  color: white;
+}
